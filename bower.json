@@ -1,0 +1,24 @@
+{
+  "name": "cheapshark-project",
+  "authors": [
+    "Brennan Karrer <brennan.karrer@broadbean.com>"
+  ],
+  "description": "Test project for Evisions",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone-amd": "~1",
+    "jquery": "~2",
+    "lodash": "~1",
+    "curl": "~0.8"
+  }
+}

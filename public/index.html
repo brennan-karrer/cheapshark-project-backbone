@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CheapShark Application</title>
+		
+		<link rel="stylesheet" href="css/main.css">
+		
+		<script data-curl-run="run.js" src="libs/curl/src/curl.js"></script>
+		<script type="text/html" id="deals_template">
+    		<div class="container">
+        		<% _.each(range_numbers.reverse(), function(n) { %>
+        		    <div class="individual-range-container">
+            		    <div class="individual-range-title"><%= n %></div>
+                		<% _.each(deals, function(deal) { %>
+                            <% if (deal.score >= n && deal.score <= n+10) { %>
+                    		    <div class="individual-deal">
+                            		<div class="individual-deal-title"><%= deal.title %></div>
+                            		<div class="individual-deal-score"><%= deal.metacriticScore %></div>
+                                </div><!--// [end] individual-deal -->
+                            <% } %>
+                		<% }); %>
+            		</div><!--// [end] individual-range-container -->
+        		<% }); %>
+    		</div><!--// [end] container -->
+		</script>
+	</head>
+	<body>
+		<!-- Populated via deals_template above -->
+	</body>
+</html>

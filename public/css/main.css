@@ -1,0 +1,49 @@
+.container {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+/* Individual Range Container */
+.individual-range-container {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.individual-range-title {
+    background: #e5e5e5;
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.individual-deal {
+    display: flex;
+    padding: 7px 0;
+    transition: all 0.3s ease 0s;
+}
+
+.individual-deal:hover {
+    background-color: #f9f9f9;
+}
+
+.individual-deal:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.individual-deal-title,
+.individual-deal-score {
+    padding: 0 20px;
+    width: 50%;
+}
+
+.individual-deal-title {
+    border-right: 1px solid #cccccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
